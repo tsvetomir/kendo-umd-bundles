@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Utility to generate UMD bundles for Kendo UI for Angular",
   "scripts": {
-    "build": "node build.mjs",
+    "build": "rm -rf dist && mkdir dist && touch ./dist/webpack-externals.json && node build.mjs",
     "serve": "npx http-server -c-1 -a localhost",
     "start": "npm run build && npm run serve"
   },
