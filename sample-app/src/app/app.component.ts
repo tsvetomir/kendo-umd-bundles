@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     public name = 'Angular UMD';
+    public listItems: Array<any> = [
+    { text: "Small", value: 1 },
+    { text: "Medium", value: 2 },
+    { text: "Large", value: 3 },
+  ];
     public gridData: any[] = [
   {
     Id: "ALFKI",
